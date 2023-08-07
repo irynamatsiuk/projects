@@ -1,3 +1,0 @@
-# Second
-
-My awesome project!

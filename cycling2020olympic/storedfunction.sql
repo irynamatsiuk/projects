@@ -1,5 +1,5 @@
 -- Creating store function 
--- The function 'which_place' depending on the class of received medal gives each competitor a resul: 
+-- The function 'which_place' depending on the class of received medal gives each competitor a result: 
 -- '1st place' for gold, '2nd place' for silver and '3rd place' for bronze.
 
 DROP FUNCTION IF EXISTS which_place;

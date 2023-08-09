@@ -1,37 +1,18 @@
--- Show column names and examples of data
-SELECT 
-    *
-FROM
-    trips
-LIMIT 1;
-
--- Count total amount of rows 
-SELECT 
-    COUNT(*) AS total_rows
-FROM
-    trips;
-
 -- Check if there are any duplicates
-SELECT 
-    ride_id, COUNT(ride_id) AS count
-FROM
-    trips
+SELECT ride_id, COUNT(ride_id) AS count
+FROM trips
 GROUP BY ride_id
 HAVING (count > 1);
+# 0 row(s) returned
+
 
 -- Another way to get data without duplicates
 SELECT DISTINCT
     *
 FROM
     cyclistic.trips;	
+# 5779444 row(s) returned that equals total number of rows in combined dataset
 
--- Check if there are any missing values
-SELECT 
-    ride_id
-FROM
-    trips
-WHERE
-    ride_id IS NULL;
 
 -- Count total rows, total rows with missing values, their difference and percentage  
 SELECT 
@@ -62,6 +43,8 @@ FROM
                         OR member_casual IS NULL) AS total_missing
     FROM
         trips) AS t;
+# More than 23% of rows have missing values
+
 
 -- Count total missing values per column
 SELECT 
@@ -80,37 +63,36 @@ SELECT
     COUNT(*) - COUNT(member_casual) AS member_casual
 FROM
     trips;
+# Missing values have 6 columns: start_station_name, start_station_id, end_station_name, end_station_id, end_lat, end_lat
 
 
 -- Check if all dates are in the correct range of time
-SELECT 
-    *
-FROM
-    trips
+SELECT *
+FROM trips
 WHERE
     started_at >= '2022-07-01 00:00:00'
         AND started_at <= '2023-06-30 23:59:59';
+# 5779444 row(s) returned that equals total number of rows in combined dataset
+
 
 -- How many trips are shorter than 1 minute
-SELECT 
-    COUNT(*)
-FROM
-    trips
+SELECT COUNT(*) as shorter_1_min
+FROM trips
 WHERE
     TIMESTAMPDIFF(MINUTE,
         started_at,
         ended_at) < 1;
+# shorter_1_min = 149372
 
 
 -- And longer than 48 hours (weekend)
-SELECT 
-    COUNT(*)
-FROM
-    trips
+SELECT COUNT(*) as longer_48_hour
+FROM trips
 WHERE
     TIMESTAMPDIFF(MINUTE,
         started_at,
         ended_at) > 2880;
+# longer_48_hour = 1194
 
 
 -- Create a view with extra columns: ride length in minutes, day of week, month 

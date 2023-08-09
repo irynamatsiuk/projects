@@ -1,6 +1,8 @@
 CREATE DATABASE cyclistic;
 
+
 USE cyclistic;
+
 
 CREATE TABLE trips (
     ride_id VARCHAR(100),
@@ -17,6 +19,7 @@ CREATE TABLE trips (
     end_lng DECIMAL(18 , 16 ),
     member_casual VARCHAR(100)
 );
+ 
  
  -- Load 12 datasets into one table 
 LOAD DATA local INFILE '/Users/imatsiuk/Downloads/GDA-cycling/CSV/202306-tripdata.csv' 
@@ -39,3 +42,15 @@ start_lng= NULLIF(@start_lng , ''),
 end_lat= NULLIF(@end_lat , ''),
 end_lng= NULLIF(@end_lng , ''),
 member_casual= NULLIF(@member_casual, '');
+
+
+-- Check columns names and examples of data
+SELECT *
+FROM trips
+LIMIT 1;
+
+
+-- Count total amount of rows 
+SELECT COUNT(*) AS total_rows
+FROM trips;
+# total_rows - 5779444

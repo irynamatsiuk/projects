@@ -31,10 +31,10 @@ In this step I continued to explore the data:
 - Checked if there are any duplicates  
   I used two different ways to check duplicates and both of them showed there are no duplicates in the data (details in the SQL Process Code section)   
 - Counted total rows, total rows with missing values, their difference and percentage  
-  ![plot]()   
+  <img src="./images/total_missing.png" width=40% height=40%>  
   More than 23% of rows have missing values, lets find out which columns have missing values  
 - Counted total missing values per column  
-  ![plot]() 
+  <img src="./images/total_missing_percolumn.png" width=90% height=100%>   
   Missing values have 6 columns: *start_station_name, start_station_id, end_station_name, end_station_id, end_lat, end_lat*.  
   All of them are related to the location, that actually doesn't have an impact on my analysis.  
 - Checked if all dates are in the correct range of time  

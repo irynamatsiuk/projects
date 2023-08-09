@@ -15,30 +15,32 @@ A competitors list and a list of nations have all winners plus some extra names.
 So the data is real, but not full.
 
 ##### 1. Database creation
-[SQL code](https://github.com/irynamatsiuk/projects/blob/main/cycling2020olympic/databasecreation.sql)  
-In MySQL Workbench I have created a relational DB of 6 tables, set Primary and Foreign Key constraints to create relations between the tables.
+[SQL code](./databasecreation.sql)  
+In MySQL Workbench I have created a relational DB of 6 tables, set Primary and Foreign Key constraints to create relations between the tables.  
 
-![plot](https://github.com/irynamatsiuk/projects/blob/main/cycling2020olympic/images/eerdiagram.png)
+<img src="./images/eerdiagram.png" width=70% height=70%>
 
 ##### 2. View
-[SQL code](https://github.com/irynamatsiuk/projects/blob/main/cycling2020olympic/view.sql)  
+[SQL code](./view.sql)  
 Using JOIN I have created a VIEW named '*bronze_medalists_info*'.
 The VIEW combines all 6 tables and returns full information about winners, who got bronze.
 In the code section there is also an example query that uses a view and returns information about *female* bronze medalists.
 
 ##### 3. Stored Function
-[SQL code](https://github.com/irynamatsiuk/projects/blob/main/cycling2020olympic/storedfunction.sql)  
+[SQL code](./storedfunction.sql)  
 The function '*which_place*' depending on the class of received medal gives each competitor a result:  
 '1st place' for gold,  
 '2nd place' for silver,  
 '3rd place' for bronze.  
-In the code section there is also an example query, that illustrates how stored function 'which_place' works and returns information about winners, who took 3rd place
+In the code section there is also an example query, that illustrates how stored function 'which_place' works and returns information about winners, who took 3rd place.
 
 ##### 4. Stored Procedure
-[SQL code](https://github.com/irynamatsiuk/projects/blob/main/cycling2020olympic/storedprocedure.sql)  
-The stored procedure '*add_competitor* adds a new competitor to competitor table.
+[SQL code](./storedprocedure.sql)  
+The stored procedure '*add_competitor* adds a new competitor to competitor table.  
+In the code section there are also illustration how this procedure works.
 
 ##### 5. Trigger
-[SQL code](https://github.com/irynamatsiuk/projects/blob/main/cycling2020olympic/trigger.sql)  
-The trigger '*competitor_name_before_insert*" enforces font consistency for inserted competitors first- and last- names.
+[SQL code](./trigger.sql)  
+The trigger '*competitor_name_before_insert*" enforces font consistency for inserted competitors first- and last- names.  
+In the code section there are also illustration how this trigger works.
 

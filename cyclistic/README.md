@@ -39,27 +39,38 @@ In this step I continued to explore the data:
   All of them are related to the location, that actually doesn't have an impact on my analysis.  
 - Checked if all dates are in the correct range of time  
   There is no data outside the selected range of time.  
-- counted how many trips are shorter than 1 minute  
+- Counted how many trips are shorter than 1 minute  
   There are *149 372* trips shorter than 1 minute  
-- and longer than 48 hours (weekend)  
+- ... and longer than 48 hours (weekend)  
   There are *1 194* trips longer than 48 hours  
 
 Next, I created a view *vw_trips* with extra columns: *ride_length_min*, *day_of_week* and *month* 
 also I excluded from this view all trips with duration less than 1 minute or more than 48 hours. 
-So the View represents clean data for further analysis.
+I left 'location columns' with missing data in this dataset, because I still can use it in my analysis for my location-not-related part of analysis.  
+So at this point created View represents clean data, that is ready for further analysis.
 
 ### Analyze Data
 [SQL Analyze Code](./03_analyze_data.sql)  
-Count how many trips were made by annual and casual members;  
-Customers bike preferences;  
-Average ride length in minutes;  
-Average ride length in minutes per type of bike;
-Number of trips depending on weekday;
-Average trip length per weekday;  
-Number of trips depending on month;  
-Average trip length per month;  
-Top 5 most populair start stations for members;  
-Top 5 most populair start stations for casual.
+- Count how many trips were made by annual and casual members  
+  <img src="./images/member-totalrides.png" width=25% height=25%>  
+- Customers bike preferences  
+  <img src="./images/member-bikepreference.png" width=40% height=40%>  
+- Average ride length in minutes  
+  <img src="./images/member-avglength.png" width=25% height=25%>  
+- Average ride length in minutes per type of bike  
+  <img src="./images/member-bikeavglength.png" width=40% height=40%>  
+- Number of trips depending on weekday  
+  <img src="./images/member-day-numtrips.png" width=40% height=40%>  
+- Average trip length per weekday  
+  <img src="./images/member-day-avglength.png" width=40% height=40%>  
+- Number of trips depending on month  
+  <img src="./images/member-month-trips.png" width=40% height=40%>   
+- Average trip length per month  
+  <img src="./images/member-month-avglength.png" width=40% height=40%>  
+- Top 5 most populair start stations for annual members  
+  <img src="./images/member-top5stations.png" width=50% height=50%> 
+- Top 5 most populair start stations for casual members  
+  <img src="./images/member-top5casual.png" width=50% height=50%>  
 
 
 ### Share Data

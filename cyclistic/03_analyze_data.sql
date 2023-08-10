@@ -13,22 +13,23 @@ SELECT
     COUNT(rideable_type) AS total_rides
 FROM
     vw_trips
-GROUP BY member_casual , rideable_type;
+GROUP BY member_casual, rideable_type
+ORDER BY member_casual;
 
 
 -- Average ride length in minutes 
 SELECT 
-    member_casual, AVG(ride_length_min) AS avg_trip_length
+    member_casual, ROUND(AVG(ride_length_min),1) AS avg_trip_length
 FROM
     vw_trips
 GROUP BY member_casual;
-
+# anual member - 12,5 min, casual member - 23,1 min
 
 -- Average ride length in minutes per type of bike
 SELECT 
     member_casual,
     rideable_type,
-    AVG(ride_length_min) AS avg_trip_length
+    ROUND(AVG(ride_length_min),1) AS avg_trip_length
 FROM
     vw_trips
 GROUP BY member_casual , rideable_type
@@ -41,13 +42,15 @@ SELECT
 FROM
     vw_trips
 GROUP BY member_casual , day_of_week
-ORDER BY num_of_trips DESC;
+ORDER BY member_casual, num_of_trips DESC;
+# annual members mostle use bikes on weekdays and casual members prefer weekends
+
 
 -- Average trip length per weekday
 SELECT 
     member_casual,
     day_of_week,
-    AVG(ride_length_min) AS avg_trip_length
+    ROUND(AVG(ride_length_min),1) AS avg_trip_length
 FROM
     vw_trips
 GROUP BY member_casual , day_of_week
@@ -60,14 +63,14 @@ SELECT
 FROM
     vw_trips
 GROUP BY member_casual , month
-ORDER BY num_of_trips DESC;
+ORDER BY member_casual, num_of_trips DESC;
 
 
 -- Average trip length per month
 SELECT 
     member_casual,
     month,
-    AVG(ride_length_min) AS avg_trip_length
+    ROUND(AVG(ride_length_min),1) AS avg_trip_length
 FROM
     vw_trips
 GROUP BY member_casual , month
@@ -84,7 +87,7 @@ FROM
 WHERE
     start_station_name IS NOT NULL
         AND member_casual = 'member'
-GROUP BY member_casual , start_station_name
+GROUP BY member_casual, start_station_name
 ORDER BY COUNT(start_station_name) DESC
 LIMIT 5;
 
@@ -99,6 +102,6 @@ FROM
 WHERE
     start_station_name IS NOT NULL
         AND member_casual = 'casual'
-GROUP BY member_casual , start_station_name
+GROUP BY member_casual, start_station_name
 ORDER BY COUNT(start_station_name) DESC
 LIMIT 5;

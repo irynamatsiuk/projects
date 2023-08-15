@@ -65,14 +65,14 @@ So created View represents clean data, that is ready for further analysis.
 [SQL Analyze Code](./03_analyze_data.sql)  
 In my analysis I have got next results:
 - Count how many trips were made by annual and casual members in one year period
-  |member_casual|total_rides|
+  |membership|total_rides|
   |-|:-:|
   |member|3360402|
   |casual|2156368|  
 
   As we can see most customers are annual members, but still there is a lot of casual members.
-- Customers bike preferences
-  |rideable_type|member_trips|casual_trips|
+- Customers bike type preferences: number of trips per membership and bike type
+  |type|member|casual|
   |-|:-:|:-:|
   |classic_bike|1631779|783931|
   |electric_bike|1728623|1234166|
@@ -81,23 +81,23 @@ In my analysis I have got next results:
   
   Annual members ride classic or electric bikes, while casual members are the only riders of docked bikes,
   also they prefer electic bikes to classic.  
-- Average ride length in minutes
-  |Member_casual|avg_trip_length|
+- Average trip duration in minutes
+  |membership|duration|
   |-|:-:|
   |member|12.5|
   |casual|23.1|
   
-  The average ride length of casual members is twice as long as annual members.  
-- Average ride length in minutes per type of bike
-  |rideable_type|member_avg_trip_length|casual_avg_trip_length|
+  The average trip duration of casual members is twice as long as annual members.  
+- Average trip duration per type of bike in minutes 
+  |rideable_type|member|casual|
   |-|:-:|:-:|
   |classic_bike|13.7|28.8|
   |electric_bike|11.3|15.3|
   |docked_bike|NULL|60.1|
   
-  The longest average trip length has docked type of bike, followed by classic bike. Both are ridden by casual members. 
+  The longest average trip duration has docked type of bike, followed by classic bike. Both are ridden by casual members. 
 - Number of trips depending on weekday
-  |day_of_week|member_trips|casual_trips|
+  |day|member|casual|
   |-|:-:|:-:|
   |Monday|453743|243206|
   |Tuesday|521872|246990|
@@ -109,9 +109,9 @@ In my analysis I have got next results:
 
   
   Casual members prefer to take a ride in weekends, while annual members - on weekdays  
-- Average trip length per weekday
+- Average trip duration per day of the week in minutes
   
-  |day_of_week|member_avg_trip_length|casual_avg_trip_length|
+  |day|member|casual|
   |-|:-:|:-:|
   |Monday|11.8|22.7|
   |Tuesday|11.9|20.4|
@@ -122,8 +122,8 @@ In my analysis I have got next results:
   |Sunday|13.8|26.5|
 
   Both annual and casual members show the tendency to have longer trips in weekends.  
-- Number of trips depending on month
-  |Month|member_trips|casual_trips|
+- Number of trips per month
+  |month|member|casual|
   |-|:-:|:-:|
   |January|140911|38061|
   |February|138302|41127|
@@ -139,8 +139,8 @@ In my analysis I have got next results:
   |December|129662|42884|
    
   Both annual and casual members show the same seasonal tendency (most trips are done in summer, least - in winter)
-- Average trip length per month
-  |month|member_avg_trip_length|casual_avg_trip_length|
+- Average trip duration per month
+  |month|member|casual|
   |-|:-:|:-:|
   |January|10.5|16.3|
   |February|10.9|18.5|
@@ -155,26 +155,26 @@ In my analysis I have got next results:
   |November|11.1|17.7|
   |December|10.7|15.8|
  
-  The average trip length have the same seasonal tendency for both annual and casual members: warmer months - longer trips, colder months - shorter trips.
+  The average trip duration have the same seasonal tendency for both annual and casual members: warmer months - longer trips, colder months - shorter trips.
     
   Now, lets compare the most popular pick-up station for two types of members:
 - Top 5 most populair start stations for annual members
-  |member_casual|start_station_name|num_of_trips|
-  |-|-|:-:|
-  |member|"Kingsbury St & Kinzie St"|24341|
-  |member|"Clark St & Elm St"|22696|
-  |member|"Clinton St & Washington Blvd"|21341|
-  |member|"Wells St & Concord Ln"|20948|
-  |member|"Loomis St & Lexington St"|19939|
+  |station|trips|
+  |-|:-:|
+  |"Kingsbury St & Kinzie St"|24341|
+  |"Clark St & Elm St"|22696|
+  |"Clinton St & Washington Blvd"|21341|
+  |"Wells St & Concord Ln"|20948|
+  |"Loomis St & Lexington St"|19939|
 
 - Top 5 most populair start stations for casual members
-  |member_casual|start_station_name|num_of_trips|
-  |-|-|:-:|
-  |casual|"Streeter Dr & Grand Ave"|51243|
-  |casual|"DuSable Lake Shore Dr & Monroe St"|29839|
-  |casual|"Michigan Ave & Oak St"|23333|
-  |casual|"Millennium Park"|22687|
-  |casual|"DuSable Lake Shore Dr & North Blvd"|21223|
+  |station|trips|
+  |-|:-:|
+  |"Streeter Dr & Grand Ave"|51243|
+  |"DuSable Lake Shore Dr & Monroe St"|29839|
+  |"Michigan Ave & Oak St"|23333|
+  |"Millennium Park"|22687|
+  |"DuSable Lake Shore Dr & North Blvd"|21223|
 
 
 ### Share Data

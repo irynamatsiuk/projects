@@ -45,12 +45,16 @@ member_casual= NULLIF(@member_casual, '');
 
 
 -- Check columns names and examples of data
-SELECT *
-FROM trips
+SELECT 
+    *
+FROM
+    trips
 LIMIT 1;
 
 
 -- Count total amount of rows 
-SELECT COUNT(*) AS total_rows
-FROM trips;
-# total_rows - 5779444
+SELECT 
+    COUNT(*) AS total_rows
+FROM
+    trips;
+

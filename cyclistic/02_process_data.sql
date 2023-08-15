@@ -1,6 +1,8 @@
 -- Check if there are any duplicates
-SELECT ride_id, COUNT(ride_id) AS count
-FROM trips
+SELECT 
+    ride_id, COUNT(ride_id) AS count
+FROM
+    trips
 GROUP BY ride_id
 HAVING (count > 1);
 # 0 row(s) returned
@@ -67,8 +69,10 @@ FROM
 
 
 -- Check if all dates are in the correct range of time
-SELECT *
-FROM trips
+SELECT 
+    *
+FROM
+    trips
 WHERE
     started_at >= '2022-07-01 00:00:00'
         AND started_at <= '2023-06-30 23:59:59';
@@ -76,8 +80,10 @@ WHERE
 
 
 -- How many trips are shorter than 1 minute
-SELECT COUNT(*) as shorter_1_min
-FROM trips
+SELECT 
+    COUNT(*) AS shorter_1_min
+FROM
+    trips
 WHERE
     TIMESTAMPDIFF(MINUTE,
         started_at,
@@ -86,8 +92,10 @@ WHERE
 
 
 -- And longer than 48 hours (weekend)
-SELECT COUNT(*) as longer_48_hour
-FROM trips
+SELECT 
+    COUNT(*) AS longer_48_hour
+FROM
+    trips
 WHERE
     TIMESTAMPDIFF(MINUTE,
         started_at,

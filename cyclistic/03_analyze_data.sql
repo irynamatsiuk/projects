@@ -1,6 +1,6 @@
 -- Count how many trips were made by annual and casual members
 SELECT 
-    member_casual, COUNT(member_casual) AS total_rides
+    member_casual as membership, COUNT(member_casual) AS total_rides
 FROM
     vw_trips
 GROUP BY member_casual;
@@ -8,52 +8,52 @@ GROUP BY member_casual;
 
 -- Customers bike preferences 
 SELECT 
-    rideable_type,
+    rideable_type as type,
     COUNT(CASE
         WHEN member_casual = 'member' THEN ride_id
-    END) AS member_trips,
+    END) AS member,
     COUNT(CASE
         WHEN member_casual = 'casual' THEN ride_id
-    END) AS casual_trips
+    END) AS casual
 FROM
     vw_trips
 GROUP BY rideable_type;
 
 
--- Average ride length in minutes 
+-- Average trip duration in minutes 
 SELECT 
-    member_casual,
-    ROUND(AVG(ride_length_min), 1) AS avg_trip_length
+    member_casual as membership,
+    ROUND(AVG(ride_length_min), 1) AS duration
 FROM
     vw_trips
 GROUP BY member_casual;
 
 
--- Average ride length in minutes per type of bike
+-- Average trip duration in minutes per type of bike
 SELECT 
     rideable_type,
     ROUND(AVG(CASE
                 WHEN member_casual = 'member' THEN ride_length_min
             END),
-            1) AS member_avg_trip_length,
+            1) AS member,
     ROUND(AVG(CASE
                 WHEN member_casual = 'casual' THEN ride_length_min
             END),
-            1) AS casual_avg_trip_length
+            1) AS casual
 FROM
     vw_trips
 GROUP BY rideable_type;
 
 
--- Number of trips per memebership type and day 
+-- Number of trips per day of the week
 SELECT 
-    day_of_week,
+    day_of_week as day,
     COUNT(CASE
         WHEN member_casual = 'member' THEN ride_id
-    END) AS member_trips,
+    END) AS member,
     COUNT(CASE
         WHEN member_casual = 'casual' THEN ride_id
-    END) AS casual_trips
+    END) AS casual
 FROM
     vw_trips
 GROUP BY day_of_week
@@ -67,17 +67,17 @@ ORDER BY FIELD(day_of_week,
         'Sunday');
 
 
--- Average trip length per memebership type and day
+-- Average trip duration per day of the week
 SELECT 
-    day_of_week,
+    day_of_week as day,
     ROUND(AVG(CASE
                 WHEN member_casual = 'member' THEN ride_length_min
             END),
-            1) AS member_avg_trip_length,
+            1) AS member,
     ROUND(AVG(CASE
                 WHEN member_casual = 'casual' THEN ride_length_min
             END),
-            1) AS casual_avg_trip_length
+            1) AS casual
 FROM
     vw_trips
 GROUP BY day_of_week
@@ -91,32 +91,32 @@ ORDER BY FIELD(day_of_week,
         'Sunday');
 
 
--- Trips count per memebership type and month
+-- Trips count per month
 SELECT 
     month,
     COUNT(CASE
         WHEN member_casual = 'member' THEN ride_id
-    END) AS member_trips,
+    END) AS member,
     COUNT(CASE
         WHEN member_casual = 'casual' THEN ride_id
-    END) AS casual_trips
+    END) AS casual
 FROM
     vw_trips
 GROUP BY month
 ORDER BY STR_TO_DATE(CONCAT('0001', month, '01'), '%Y %M %D');
 
 
--- Average trip length per membership type and  month
+-- Average trip duration per month
 SELECT 
     month,
     ROUND(AVG(CASE
                 WHEN member_casual = 'member' THEN ride_length_min
             END),
-            1) AS member_avg_trip_length,
+            1) AS member,
     ROUND(AVG(CASE
                 WHEN member_casual = 'casual' THEN ride_length_min
             END),
-            1) AS casual_avg_trip_length
+            1) AS casual
 FROM
     vw_trips
 GROUP BY month
@@ -125,29 +125,27 @@ ORDER BY STR_TO_DATE(CONCAT('0001', month, '01'), '%Y %M %D');
 
 -- Top 5 most populair start stations for members
 SELECT 
-    member_casual,
-    start_station_name,
-    COUNT(start_station_name) AS num_of_trips
+    start_station_name AS station,
+    COUNT(start_station_name) AS trips
 FROM
     vw_trips
 WHERE
     start_station_name IS NOT NULL
         AND member_casual = 'member'
-GROUP BY member_casual , start_station_name
+GROUP BY start_station_name
 ORDER BY COUNT(start_station_name) DESC
 LIMIT 5;
 
 
 -- Top 5 most populair start stations for casual
 SELECT 
-    member_casual,
-    start_station_name,
-    COUNT(start_station_name) AS num_of_trips
+    start_station_name AS station,
+    COUNT(start_station_name) AS trips
 FROM
     vw_trips
 WHERE
     start_station_name IS NOT NULL
         AND member_casual = 'casual'
-GROUP BY member_casual , start_station_name
+GROUP BY start_station_name
 ORDER BY COUNT(start_station_name) DESC
 LIMIT 5;

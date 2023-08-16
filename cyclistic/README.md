@@ -21,7 +21,7 @@ As a jr. data analyst I was assigned you to answer the question:
 **How do annual members and casual riders use Cyclistic bikes differently?**
 
 ### Prepate Data  
-[SQL Prepare Code](./01_prepare_data.sql)      
+[SQL Code - Prepare](./01_prepare_data.sql)      
 I downloaden 12 most recent datasets (july 2022 - june 2023) from a Cyclistic’s historical trip data (provided by the course in .csv format).  
 Confirmed that all files have the same structure.
 In MySQL Workbench I created a database *cyclistic*, a table *trips* and
@@ -32,7 +32,7 @@ Combined dataset has 13 columns:
 and *5 779 444* rows in total
 
 ### Process Data 
-[SQL Process Code](./02_process_data.sql)  
+[SQL Code - Process](./02_process_data.sql)  
 In this step I continued to explore the data:   
 - Checked if there are any duplicates  
   I used two different ways to check duplicates and both of them showed there are no duplicates in the data (details in the SQL Process Code section)   
@@ -62,7 +62,7 @@ I left the rows with missing values in 'location columns' in this view, because 
 So created View represents clean data, that is ready for further analysis.
 
 ### Analyze Data
-[SQL Analyze Code](./03_analyze_data.sql)  
+[SQL Code - Analyze](./03_analyze_data.sql)  
 In my analysis I have got next results:
 - Count how many trips were made by annual and casual members in one year period
   |membership|total_rides|
@@ -178,7 +178,49 @@ In my analysis I have got next results:
 
 
 ### Share Data
-Most of the time numbers are difficult to understand, that is why I used Tableau in order to create visualization.
+Most of the time numbers are difficult to understand, that is why I have used Tableau to create visualizations.  
+My Visualizations on Tableau Public [cyclistic by Iryna M.](https://public.tableau.com/app/profile/iryna.m./viz/cyclistic_16921134477300/Dashboard1)  
+
+Let's visualize amount of trips made by each type of member  
+<img src="./images/membership-trips.png" width=130% height=130%>  
+There are  approx. one trird more annual members, than casual  
+
+Next, lets take a look at the differense in trips duration between 2 types of members  
+<img src="./images/membership-avgduration.png" width=130% height=130%>  
+Casual members ride bikes twice longer than annual members: 23.1 minutes vs. 12.5 minutes.
+
+Bike type preferences  
+<img src="./images/bike-preference.png" width=70% height=70%>  
+Annual members ride classic or electric bikes, while casual members prefer electic bikes to classic. Also they are the only riders of docked bikes.  
+
+Average Trip Duration per Type of Bike in minutes
+<img src="./images/bike-avgduration.png" width=120% height=120%>   
+The longest average trip duration has docked type of bike, followed by classic bike. Both are ridden by casual members.   
+
+Number of trips depending on weekday  
+<img src="./images/day-trips.png" width=70% height=70%>   
+ Casual members prefer to take a ride in weekends, while annual members - on weekdays   
+ 
+ Average trip duration per day of the week in minutes  
+<img src="./images/day-avgduration.png" width=70% height=70%>  
+Both annual and casual members show the tendency to have longer trips in weekends.  
+
+Number of trips per month  
+<img src="./images/month-trips.png" width=70% height=70%>  
+Both annual and casual members show the same seasonal tendency (most trips are done in summer, least - in winter)  
+
+Average trip duration per month  
+<img src="./images/month-agvduration.png" width=70% height=70%>  
+The average trip duration have the same seasonal tendency for both annual and casual members: warmer months - longer trips, colder months - shorter trips.  
+
+Summary  
+  <img src="./images/Summary.png" width=70% height=70%>  
+
+
+
+
+
+
 
 
 

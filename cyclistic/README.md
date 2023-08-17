@@ -3,18 +3,22 @@
 
 ### Course: Google Data Analytics Capstone: Complete a Case Study at [Coursera](https://www.coursera.org/learn/google-data-analytics-capstone)
 
+Quick Links:  
 [Scenario](./README.md#scenario)  
 [Business Question](./README.md#business-question)  
 [Prepare Data](./README.md#prepate-data)  
 [Process Data](./README.md#process-data)  
 [Analyze Data](./README.md#analyze-data)  
 [Share Data](./README.md#share-data)  
+[Summary](./README.md#summary)
 
 ### Scenario
 In this case study I am a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director
 of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore,
 the team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights,
 the team will design a new marketing strategy to convert casual riders into annual members.  
+
+<img src="./images/logo.png" width=20% height=20%>  
 
 ### Business Question
 As a jr. data analyst I was assigned you to answer the question:  
@@ -47,7 +51,7 @@ In this step I continued to explore the data:
   |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
   |0|0|0|0|857860|857992|915655|915796|0|0|5795|5795|0|
 
-  Missing values have 6 columns: *start_station_name, start_station_id, end_station_name, end_station_id, end_lat, end_lat*.  
+  6 columns have missing values: *start_station_name, start_station_id, end_station_name, end_station_id, end_lat, end_lat*.  
   All of them are related to the location, that won't have any impact on my analysis.  
 - Checked if all dates are in the correct range of time  
   There is no data outside the selected range of time.  
@@ -179,52 +183,50 @@ In my analysis I have got next results:
 
 ### Share Data
 Most of the time numbers are difficult to understand, that is why I have used Tableau to create visualizations.  
-My Visualizations on Tableau Public [cyclistic by Iryna M.](https://public.tableau.com/app/profile/iryna.m./viz/cyclistic_16921134477300/Dashboard1)  
+Visualizations on my Tableau Public profile [cyclistic by Iryna M.](https://public.tableau.com/app/profile/iryna.m./viz/cyclistic_16921134477300/Dashboard1)  
 
 Let's visualize amount of trips made by each type of member  
 <img src="./images/membership-trips.png" width=130% height=130%>  
 There are  approx. one trird more annual members, than casual  
 
-Next, lets take a look at the differense in trips duration between 2 types of members  
+Next, lets take a look at the difference in trips duration between 2 types of members  
 <img src="./images/membership-avgduration.png" width=130% height=130%>  
 Casual members ride bikes twice longer than annual members: 23.1 minutes vs. 12.5 minutes.
 
-Bike type preferences  
-<img src="./images/bike-preference.png" width=70% height=70%>  
+How does bike type preference differ?  
+<img src="./images/bike-preference.png" width="500" height="500">  
 Annual members ride classic or electric bikes, while casual members prefer electic bikes to classic. Also they are the only riders of docked bikes.  
 
-Average Trip Duration per Type of Bike in minutes
+How does trip duration differ per type of bike and membership?  
 <img src="./images/bike-avgduration.png" width=120% height=120%>   
 The longest average trip duration has docked type of bike, followed by classic bike. Both are ridden by casual members.   
 
-Number of trips depending on weekday  
-<img src="./images/day-trips.png" width=70% height=70%>   
- Casual members prefer to take a ride in weekends, while annual members - on weekdays   
+What are weekday preferences?  
+<img src="./images/day-trips.png" width="500" height="500">   
+Casual members prefer to take a ride in weekends, while annual members - on weekdays   
  
- Average trip duration per day of the week in minutes  
-<img src="./images/day-avgduration.png" width=70% height=70%>  
+How does trip duration differ per weekday?  
+<img src="./images/day-avgduration.png" width="500" height="500">  
 Both annual and casual members show the tendency to have longer trips in weekends.  
 
-Number of trips per month  
-<img src="./images/month-trips.png" width=70% height=70%>  
+Is there a seasonal difference in using cyclistics bikes?  
+<img src="./images/month-trips.png" width="500" height="500">  
 Both annual and casual members show the same seasonal tendency (most trips are done in summer, least - in winter)  
 
-Average trip duration per month  
-<img src="./images/month-agvduration.png" width=70% height=70%>  
+How does trip duration differ per month?  
+<img src="./images/month-agvduration.png" width="500" height="500">  
 The average trip duration have the same seasonal tendency for both annual and casual members: warmer months - longer trips, colder months - shorter trips.  
 
-Summary  
+### Summary  
+As a result of the analysis next differences were found:
+|Difference|Casual Member|Annual Member|
+|-|-|-|
+|Bike Preferences|electric bike rather than classic, sometimes - docked |classic or electric, nerver docked|
+|Avg Trip Duration (minutes)|electric - 15.3 , classic - 28.8 , docked - 60.1|electric - 11.3 , classic - 13.7|
+|Day Preference|weekends|weekdays|
+
+Also I have created summary dashboard with most important differences between memberships  
   <img src="./images/Summary.png" width=70% height=70%>  
-
-
-
-
-
-
-
-
-
-### Conclussion
+  
 In this case study I had an opportunity to analyze historical bicycle trip data in order to identify trends. 
-Understanding how casual riders behave differently from riders with paid memberships is important. 
-This analysis will help executives to make decisions about marketing programs and strategies to convert casual riders to riders with annual memberships.
+Understanding how casual riders behave differently from riders with paid memberships is important, it will help executives to make decisions about marketing programs and strategies to convert casual riders to riders with annual memberships.

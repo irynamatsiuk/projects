@@ -2,6 +2,7 @@
 ## Case Study: Cyclistic bike-share analysis   
 
 ### Course: Google Data Analytics Capstone: Complete a Case Study at [Coursera](https://www.coursera.org/learn/google-data-analytics-capstone)
+This course is the part of Google Data Analytics Professional Certificate at [Courseca](https://www.coursera.org/professional-certificates/google-data-analytics)  
 
 Quick Links:  
 [Scenario](./README.md#scenario)  
@@ -194,7 +195,7 @@ Next, lets take a look at the difference in trips duration between 2 types of me
 Casual members ride bikes twice longer than annual members: 23.1 minutes vs. 12.5 minutes.
 
 How does bike type preference differ?  
-<img src="./images/bike-preference.png" width="500" height="500">  
+<img src="./images/bike-preference.png" width="800">  
 Annual members ride classic or electric bikes, while casual members prefer electic bikes to classic. Also they are the only riders of docked bikes.  
 
 How does trip duration differ per type of bike and membership?  
@@ -202,19 +203,19 @@ How does trip duration differ per type of bike and membership?
 The longest average trip duration has docked type of bike, followed by classic bike. Both are ridden by casual members.   
 
 What are weekday preferences?  
-<img src="./images/day-total-trips.png" width="500" height="500">   
+<img src="./images/day-total-trips.png" width="800">   
 Casual members prefer to take a ride in weekends, while annual members - on weekdays   
  
 How does trip duration differ per weekday?  
-<img src="./images/day-avg-trip-duration.png" width="500" height="500">  
+<img src="./images/day-avg-trip-duration.png" width="800">  
 Both annual and casual members show the tendency to have longer trips in weekends.  
 
 Is there a seasonal difference in using cyclistics bikes?  
-<img src="./images/month-total-trips.png" width="500" height="500">  
+<img src="./images/month-total-trips.png" width="800">  
 Both annual and casual members show the same seasonal tendency (most trips are done in summer, least - in winter)  
 
 How does trip duration differ per month?  
-<img src="./images/month-avg-trip-duration.png" width="500" height="500">  
+<img src="./images/month-avg-trip-duration.png" width="800">  
 The average trip duration have the same seasonal tendency for both annual and casual members: warmer months - longer trips, colder months - shorter trips.  
 
 ### Summary  

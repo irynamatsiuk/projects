@@ -22,12 +22,12 @@ the team will design a new marketing strategy to convert casual riders into annu
 <img src="./images/logo.png" width=20% height=20%>  
 
 ### Business Question
-As a jr. data analyst I was assigned you to answer the question:  
+As a jr. data analyst I was assigned to answer the question:  
 **How do annual members and casual riders use Cyclistic bikes differently?**
 
 ### Prepate Data  
 [SQL Code - Prepare](./01_prepare_data.sql)      
-I downloaden 12 most recent datasets (july 2022 - june 2023) from a Cyclistic’s historical trip data (provided by the course in .csv format).  
+I downloaded 12 most recent datasets (july 2022 - june 2023) from a Cyclistic’s historical trip data (provided by the course in .csv format).  
 Confirmed that all files have the same structure.
 In MySQL Workbench I created a database *cyclistic*, a table *trips* and
 loaded 12 .csv files in order to combine all datasets into one file.  

@@ -23,7 +23,7 @@ In MySQL Workbench I have created a relational DB of 6 tables, set Primary and F
 ##### 2. View
 [SQL code](./view.sql)  
 Using JOIN I have created a VIEW named '*bronze_medalists_info*'.
-The VIEW combines all 6 tables and returns full information about winners, who got bronze.
+The VIEW combines all 6 tables and returns full information about winners, who got bronze.  
 In the code section there is also an example query that uses a view and returns information about *female* bronze medalists.
 
 ##### 3. Stored Function
@@ -44,3 +44,8 @@ In the code section there are also illustration how this procedure works.
 The trigger '*competitor_name_before_insert*" enforces font consistency for inserted competitors first- and last- names.  
 In the code section there are also illustration how this trigger works.
 
+##### 6. Other Queries
+[SQL code](./queries.sql)   
+Here are 2 more queries I have written in my course project:  
+1. a query with *subquery*, that creates a list of dutch cyclists at the 2020 Summer Olympics  
+2. a query with with *join, having, group by, order by*, that answers next question: "Which countries have got 3 or more medals in total?" 

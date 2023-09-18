@@ -35,7 +35,7 @@ als u gecreëerde dasboard wilt zien
 
 #### Certificaten
 [Google Data Analytics Professional Certificate](https://coursera.org/share/7ad591547cd434b1509aaf42673bcd0b)  
-
+[Introduction to Data & SQL](./certificates/cfg_certificate.pdf)  
 
 #### What’s next?
 Zeker is er nog veel te leren. 

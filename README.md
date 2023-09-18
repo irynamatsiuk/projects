@@ -17,19 +17,19 @@ Ideaal voor een koude en saaie dag.
 Verrassend genoeg werd ik heel geïnteresseerd in dit onderwerp. 
 
 #### My learning path
-Vervolgens koos ik voor “[Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics)” van Coursera.
+Vervolgens koos ik voor “[Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics)” van Coursera.  
 Deze cursus gaf me een beter begrip van het werk van Data Analyst. 
-Ook had ik praktische oefeningen: data cleaning, analysis and visualization (gebruikte tools: spreadsheets, SQL, Tableau en een beetje R-programming). 
-Aan het eind van de cursus heb ik een Case Study afgemaakt. 
+Ook had ik praktische oefeningen: data cleaning, analysis and visualization (gebruikte tools: spreadsheets, SQL, Tableau en een beetje R-programming).   
+Aan het eind van de cursus heb ik een Case Study afgemaakt.   
 [Toets hier](.cyclistic) voor meer informatie over mijn Case Study  
 
-Tijdens het leren van Google vond ik nog een interessante cursus - [Introduction to Data & SQL course van [CodeFirstGirls Coding Kickstarter](https://codefirstgirls.com/courses/classes/coding-kickstarter/) . 
-Deze cursus gaf me diepere kennis van SQL en database management. 
-Aan het eind van de 8 week cursus heb ik een cursus project afgemaakt. 
+Tijdens het leren van Google vond ik nog een interessante cursus - Introduction to Data & SQL course van [CodeFirstGirls Coding Kickstarter](https://codefirstgirls.com/courses/classes/coding-kickstarter/). 
+Deze cursus gaf me diepere kennis van SQL en database management.   
+Aan het eind van de 8 week cursus heb ik een cursus project afgemaakt.   
 [Toets hier](.cycling2020olympic) voor meer informatie over dit project  
 
-Het laatst was ik bezig met 3 daagse Tableau cursus van [GoIT](https://goit.global/ph/ )
-Het doel van deze korte cursus was een interactief dashboard te creëren. 
+Daarna had 3 daagse Tableau cursus van [GoIT](https://goit.global/ph/ )  
+Het doel van deze korte cursus was een interactief dashboard te creëren.   
 [Toets hier](https://public.tableau.com/views/movies_16933100743550/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) 
 als u gecreëerde dasboard wilt zien (Tableau Public)  
 

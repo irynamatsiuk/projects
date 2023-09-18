@@ -4,8 +4,8 @@ Ik ben Iryna Matsiuk en ik ben erg blij dat u op deze pagina bent.
 Hier kunt u mijn projecten vinden, die ik heb afgemaakt tijdens data gerelateerde zelfstudie.  
 
 *Quick Links*:  
-[Google Data Analytics - Case Study](.cycling2020olympic)   
-[Introduction to Data & SQL - Course Project](.cycling2020olympic)  
+[Google Data Analytics - Case Study](./cycling2020olympic)   
+[Introduction to Data & SQL - Course Project](./cycling2020olympic)  
 [An Interactive Dashboard in Tableau](https://public.tableau.com/views/movies_16933100743550/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) 
 
 #### So, why data?
@@ -21,12 +21,12 @@ Vervolgens koos ik voor “[Google Data Analytics Professional Certificate](http
 Deze cursus gaf me een beter begrip van het werk van Data Analyst. 
 Ook had ik praktische oefeningen: data cleaning, analysis and visualization (gebruikte tools: spreadsheets, SQL, Tableau en een beetje R-programming).   
 Aan het eind van de cursus heb ik een Case Study afgemaakt.   
-[Toets hier](.cyclistic) voor meer informatie over mijn Case Study  
+[Toets hier](./cyclistic) voor meer informatie over mijn Case Study  
 
 Tijdens het leren van Google vond ik nog een interessante cursus - Introduction to Data & SQL course van [CodeFirstGirls Coding Kickstarter](https://codefirstgirls.com/courses/classes/coding-kickstarter/). 
 Deze cursus gaf me diepere kennis van SQL en database management.   
 Aan het eind van de 8 week cursus heb ik een cursus project afgemaakt.   
-[Toets hier](.cycling2020olympic) voor meer informatie over dit project  
+[Toets hier](./cycling2020olympic) voor meer informatie over dit project  
 
 Daarna had 3 daagse Tableau cursus van [GoIT](https://goit.global/ph/ )  
 Het doel van deze korte cursus was een interactief dashboard te creëren.   

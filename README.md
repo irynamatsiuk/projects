@@ -4,14 +4,14 @@ Ik ben Iryna Matsiuk en ik ben erg blij dat u op deze pagina bent.
 Hier kunt u mijn projecten vinden, die ik heb afgemaakt tijdens data gerelateerde zelfstudie.  
 
 *Quick Links*:  
-[Google Data Analytics - Case Study](./cycling2020olympic)   
+[Google Data Analytics - Case Study](./cyclistic)   
 [Introduction to Data & SQL - Course Project](./cycling2020olympic)  
 [An Interactive Dashboard in Tableau](https://public.tableau.com/views/movies_16933100743550/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) 
 
 #### So, why data?
 Een half jaar geleden is dit verhaal begonnen. 
 Op die dag was het weer regenachtig en ik had wat vrije tijd - de beste situatie om iets nieuw te leren. 
-Toevallig vond ik een online cursus “Introduction to Data Analytics” van [simplilearn.com/skillup](https://www.simplilearn.com/learn-data-analytics-for-beginners-skillup). 
+Toevallig vond ik een online cursus “Introduction to Data Analytics” van [SimpliLearn - Skillup](https://www.simplilearn.com/learn-data-analytics-for-beginners-skillup). 
 Dit was een korte 3 uur cursus met algemene informatie. 
 Ideaal voor een koude en saaie dag. 
 Verrassend genoeg werd ik heel geïnteresseerd in dit onderwerp. 
@@ -31,11 +31,11 @@ Aan het eind van de 8 week cursus heb ik een cursus project afgemaakt.
 Daarna had 3 daagse Tableau cursus van [GoIT](https://goit.global/ph/ )  
 Het doel van deze korte cursus was een interactief dashboard te creëren.   
 [Toets hier](https://public.tableau.com/views/movies_16933100743550/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link) 
-als u gecreëerde dasboard wilt zien (Tableau Public)  
+als u gecreëerde dasboard wilt zien  
 
 #### Certificaten
 [Google Data Analytics Professional Certificate](https://coursera.org/share/7ad591547cd434b1509aaf42673bcd0b)  
-Introduction to Data & SQL
+
 
 #### What’s next?
 Zeker is er nog veel te leren. 

@@ -42,7 +42,8 @@ Zeker is er nog veel te leren.
 Daarom ga ik in ieder geval mijn huidige kennis verdiepen, 
 bovendien vind ik python programmeertaal heel belangrijk voor verdere ontwikkeling in de data field.  
 Traineeship of junior positie zie ik als een perfecte mogelijkheid waardoor ik verder kan leren tijdens het werken.   
-Laat het me weten als u me een passende kandidaat vindt. Mijn contact gegevens zijn in de CV. Ik hoor graag van u!  
+Laat het me weten als u me een passende kandidaat vindt. Mijn contact gegevens zijn in de CV. 
+Ik hoor graag van u!  
 
 
 Met vriendelijke groeten,  
